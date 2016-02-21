@@ -205,7 +205,7 @@ public class NativeAudio extends CordovaPlugin implements AudioManager.OnAudioFo
 	                // Use the music stream.
 	                AudioManager.STREAM_NOTIFICATION,
 	                // Request permanent focus.
-	                AudioManager.AUDIOFOCUS_GAIN);
+	                AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
 		// Allow android to receive the volume events
 		this.webView.setButtonPlumbedToJs(KeyEvent.KEYCODE_VOLUME_DOWN, false);
